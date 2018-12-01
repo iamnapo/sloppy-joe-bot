@@ -3,6 +3,9 @@
 A slackbot that uses IBM's Natural Language Understanding API, and Markov
 Chains, to find / generate Alexis Tsipras' rhetoric.
 
+<img src="./demo.gif">
+
+
 ## Setup
 
 1. Put your slackbot token in a file called 'token' in the root directory
