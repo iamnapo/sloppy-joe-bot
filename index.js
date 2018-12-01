@@ -68,8 +68,7 @@ function closestQuote(quote) {
 		if (rel[0] >= 0.3) {
 			return rel[1];
 		}
-
-	})
+	}).catch(console.error)
 }
 
 bot.on('message', data => {
@@ -86,6 +85,8 @@ bot.on('message', data => {
 		}
 		console.log('Replying to user:', data.user, 'with quote:', quote);
 		bot.postMessage(data.channel, quote, { as_user: true, icon_url: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Alexis_Tsipras_2013.jpg' });
+	}).catch(err => {
+		console.error(err);
+		bot.postMessage(data.channel, nextSentence().string, { as_user: true, icon_url: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Alexis_Tsipras_2013.jpg' });
 	});
-
 });

@@ -1,8 +1,7 @@
 # sloppy-joe-bot
 
 A slackbot that uses IBM's Natural Language Understanding API, and Markov
-Chains, to find / generate Alexis Tsipras' rhetoric. 
-https://sloppy-joe.slack.com/messages/DEJB9R2A2/
+Chains, to find / generate Alexis Tsipras' rhetoric.
 
 ## Setup
 
@@ -13,5 +12,5 @@ https://sloppy-joe.slack.com/messages/DEJB9R2A2/
 
 ## Environment Variables
 
-- **SLACK_BOT_TOKEN**: The token of the slack bot 
+- **SLACK_BOT_TOKEN**: The token of the slack bot
 - **WATSON_API_KEY**: The api key for the IBM's natural language understanding module
