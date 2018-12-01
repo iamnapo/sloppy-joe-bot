@@ -2,6 +2,7 @@
 
 A slackbot that uses IBM's Natural Language Understanding API, and Markov
 Chains, to find / generate Alexis Tsipras' rhetoric. 
+https://sloppy-joe.slack.com/messages/DEJB9R2A2/
 
 ## Setup
 
