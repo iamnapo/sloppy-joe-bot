@@ -79,7 +79,11 @@ bot.on('message', data => {
 
 	let quote;
 	closestQuote(data.text).then((q) => {
-		quote = q ? q.quote : nextSentence().string;
+		if (data.text === 'Local Hack Day') {
+			quote = 'Local hack day is the best event of the year 😎'
+		} else {
+			quote = q ? q.quote : nextSentence().string;
+		}
 		console.log('Replying to user:', data.user, 'with quote:', quote);
 		bot.postMessage(data.channel, quote, { as_user: true, icon_url: 'https://upload.wikimedia.org/wikipedia/commons/f/f0/Alexis_Tsipras_2013.jpg' });
 	});
