@@ -1,20 +1,52 @@
 {
   "name": "tsipras-bot",
   "version": "0.1.0",
+  "description": "A slackbot that uses IBM's NLU API, and Markov Chains, to generate Alexis Tsipras' rhetoric",
+  "keywords": [
+    "ibm-watson",
+    "local-hack-day-2018",
+    "nodejs",
+    "slackbot"
+  ],
+  "homepage": "https://github.com/iamnapo/sloppy-joe-bot#readme",
+  "bugs": {
+    "url": "https://github.com/iamnapo/sloppy-joe-bot/issues"
+  },
+  "repository": "github:iamnapo/sloppy-joe-bot",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Napoleon Oikonomou",
+      "email": "napoleonoikon@gmail.com",
+      "url": "https://iamnapo.me"
+    },
+    {
+      "name": "Tasos Kakouris",
+      "email": "tasoskakour@gmail.com"
+    },
+    {
+      "name": "Dimitris Tampakis",
+      "email": "dimitamp@vilabs.eu"
+    }
+  ],
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "eslint ."
   },
   "dependencies": {
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "markov-strings": "^2.0.1",
-    "request": "^2.88.0",
     "scrape-twitter": "^0.11.1",
     "slackbots": "^1.2.0",
     "watson-developer-cloud": "^3.13.1"
   },
   "devDependencies": {
-    "xo": "^0.23.0"
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
   }
 }
